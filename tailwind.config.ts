@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,10 +8,29 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'md': '375px',
+      'lg': '1440px',
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          'white': 'hsl(0, 0%, 100%)',
+          'black': 'hsl(0, 0%, 0%)',
+          'dark-gray': 'hsl(0, 0%, 63%)',
+          'very-dark-gray': 'hsl(0, 0%, 27%)',
+        },
+      },
+      fontFamily: {
+        spartan: ['var(--font-spartan)'],
+      },
+      fontSize: {
+        body: '12px',
+      },
+      fontWeight: {
+        medium: '500',   
+        semibold: '600',   
+        bold: '700',   
       },
     },
   },
