@@ -3,17 +3,17 @@ import Image from "next/image";
 
 const About = () => {
 	return (
-		<div className="w-full p4-12  text-left font-spartan ">
-			<div className="w-full h-[29vh] relative ">
+		<div className="w-full text-left font-spartan lg:grid lg:grid-cols-4 justify-items-stretch lg:h-[33.9vh] items-center ">
+			<div className="w-full h-[29vh] lg:h-full relative ">
 				<Image
 					src="/images/image-about-dark.jpg"
 					fill
 					alt="about image dark"
-					className="object-contain "
+					className="object-contain lg:object-cover"
 				/>
 			</div>
 
-			<div className="px-10 py-12 w-full">
+			<div className="px-10 lg:px-16 lg:py-16 py-12 w-full lg:h-full lg:col-span-2">
 				<h2 className='font-bold font-spartan tracking-[.2rem]'>
 					ABOUT OUR FURNITURE
 				</h2>
@@ -23,12 +23,12 @@ const About = () => {
 				</p>
 			</div>
 
-            <div className="w-full h-[29vh] relative ">
+            <div className="w-full h-[29vh] lg:h-full relative ">
 				<Image
 					src="/images/image-about-light.jpg"
 					fill
 					alt="about image light"
-					className="object-contain "
+					className="object-contain  lg:object-cover "
 				/>
 			</div>
 		</div>
