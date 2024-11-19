@@ -89,7 +89,7 @@ const Nav = () => {
 				</div>
 			</div>
 
-			<div className="lg:flex items-center gap-16 px-10 py-8 md:hidden">
+			<div className="lg:flex items-center gap-16 px-10 py-8 hidden">
 				<h2 className="text-3xl leading-none font-semibold text-white">room</h2>
 
 				<nav className="flex items-center gap-4">

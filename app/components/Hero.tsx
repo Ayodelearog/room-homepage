@@ -123,7 +123,7 @@ const Hero = () => {
 			</div>
 
 			{/* desktop screen */}
-			<div className="w-full h-fit md:hidden lg:block">
+			<div className="w-full h-fit hidden lg:block">
 				<div
 					className="flex w-full h-[66vh] overflow-hidden "
 					role="region"
